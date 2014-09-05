@@ -1,0 +1,251 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    position: relative;
+    padding-bottom: 20px;
+    font-family: "Lantinghei TC", Hiragino Kaku Gothic Pro, Heiti TC, "微軟正黑體", "STHeiti Light", "Microsoft Yahei", "Microsoft JhengHei", Helvetica, sans-serif !important;
+}
+
+.title h1{
+    margin-top: 140px;
+    color: #ADFF2F;
+    font-weight: 600;
+    font-size: 5em;
+}
+
+.title h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 3em;  
+}
+
+.engage-btn {
+    margin-top: 40px;
+    padding: 20px 40px !important; 
+    font-weight: 700;
+}
+
+.description {
+    margin-top: 150px;
+    text-align: left;
+    padding: 100px;
+    padding: 40px 40px;
+    background: rgba(200, 200, 200, 0.4);
+    border-radius: 40px;
+    font-size: 17px;
+    line-height: 3em;
+}
+
+.description p {
+    color: #FFEE99;
+}
+
+.description h3 {
+    padding: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+}
+
+.marketing p + h4 {
+    margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+/*
+Tutorial Name: Scroll To Top Then Fixed Navigation Effect With JQuery and CSS
+Description: Create a sticky navigation bar that remains fixed to the top after scroll
+Author: Stanislav Kostadinov
+Author URI: http://stanislav.it
+Version: 1.0.0 - 11.01.2014
+*/
+
+* {margin: 0; padding: 0;}
+
+a {text-decoration: none;}
+
+/* This class is added on scroll */
+.fixed {
+    position: fixed; 
+    top: 0; 
+    height: 70px; 
+    z-index: 1;
+}
+
+body {
+    color: #fff;
+    font-family: 'open-sans-bold'; 
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Font Face Settings */
+@font-face {
+    font-family: 'open-sans-bold';
+    src: url('../fonts/open-sans/OpenSans-Bold.eot');
+    src: url('../fonts/open-sans/OpenSans-Bold.eot?iefix') format('embedded-opentype'),
+         url('../fonts/open-sans/OpenSans-Bold.ttf');
+    font-weight: normal;
+}   
+
+/* Navigation Settings */
+nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: #43b29d;
+    z-index: 10000;
+}
+
+nav li {
+    display: inline-block;
+    padding: 24px 10px;
+}
+
+nav li a {
+    color: #000000;
+    text-transform: uppercase;
+}
+
+section {
+    height: 100vh;
+}
+
+/* Screens Settings */
+#screen1 {  
+    background: url('../images/hackny_coding.jpg');
+    position: absolute;
+    width: 100%;
+    opacity: 0.75;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+#screen1 p {
+    padding-top: 200px;
+}
+
+#screen2 {
+    background: #000000;
+    background: url('../images/inflicted.png');
+}
+
+#screen3 {
+    background: #e1793d;
+    z-index: 10000;
+/*    position: relative;
+*/}
+
+@media only screen and (max-width: 520px) {
+
+    nav li {
+        padding: 24px 4px;
+    }
+
+    nav li a {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 0.65em;
+    }
+
+    .description > h3{
+        font-size: 1.2em;
+    }
+}
+
+/*About.html*/
+.about-content {
+    margin-top: 100px;
+    text-align: left;    
+}
+
+.thumbnails {
+    width: 200px;
+}
+
+/*Course.html*/
+.course-content {
+    margin-top: 100px;
+    text-align: left;
+}
