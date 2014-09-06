@@ -99,8 +99,11 @@ body {
 
 /* Supporting marketing content */
 .marketing {
-    position: static;
     margin: 40px 0;
+}
+
+.marketing .col-lg-4 {
+    position: static;
 }
 
 .marketing p + h4 {
