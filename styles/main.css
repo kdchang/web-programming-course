@@ -233,17 +233,21 @@ section {
     }
 
     .title h1 {
+        font-size: 0.8em;
         margin-top: 10px;
     }
-    
+
+    .title h2 {
+        font-size: 0.7em;
+    }    
     
     .description {
         margin-top: 50px;
     }
 
     .description > p{
-        font-size: 14px;
-        line-height: 1.2em;
+        font-size: 20px;
+        line-height: 1.5em;
     }
 }
 
