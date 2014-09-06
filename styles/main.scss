@@ -229,15 +229,17 @@ section {
     }
 
     .title {
+        margin-top: 10px;
         font-size: 0.65em;
     }
     
     .description {
-        margin-top: 80px;
+        margin-top: 50px;
     }
 
     .description > p{
-        font-size: 0.65em;
+        font-size: 14px;
+        line-height: 1.2em;
     }
 }
 
