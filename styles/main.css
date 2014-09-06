@@ -231,13 +231,19 @@ section {
     .title {
         font-size: 0.65em;
     }
+
+    .title h1 {
+        margin-top: 10px;
+    }
+    
     
     .description {
-        margin-top: 80px;
+        margin-top: 50px;
     }
 
     .description > p{
-        font-size: 0.65em;
+        font-size: 14px;
+        line-height: 1.2em;
     }
 }
 
