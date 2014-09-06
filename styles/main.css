@@ -47,7 +47,7 @@ body {
 }
 
 .description p {
-    color: black;
+    color: #000000;
 }
 
 .description h3 {
@@ -211,11 +211,14 @@ section {
 
 #screen3 {
     background: #e1793d;
-    z-index: 10000;
+    z-index: 1;
 /*    position: relative;
 */}
 
 @media only screen and (max-width: 520px) {
+    navbars {
+
+    }
 
     nav li {
         padding: 24px 4px;
@@ -229,8 +232,8 @@ section {
         font-size: 0.65em;
     }
 
-    .description > h3{
-        font-size: 1.2em;
+    .description > p{
+        font-size: 1em;
     }
 }
 
