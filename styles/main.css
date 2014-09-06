@@ -35,6 +35,10 @@ body {
     font-weight: 700;
 }
 
+.nav-btn {
+    display: none;
+}
+
 .description {
     margin-top: 150px;
     text-align: left;
@@ -248,6 +252,9 @@ section {
     .description > p{
         font-size: 18px;
         line-height: 1.5em;
+    }
+    .nav-btn {
+        display: inline-block;
     }
 }
 
