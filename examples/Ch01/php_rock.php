@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>PHP ROCK</title>
 </head>
 <body>
 	<?php $color='red'; ?>
