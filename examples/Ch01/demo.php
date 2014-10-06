@@ -1,8 +1,12 @@
 <?php
-if(!file_exists("demo.txt")){
-    $file_ref = fopen("demo.txt", "w");    //打開檔案
-    //echo $file_ref;
-    echo get_resource_type($file_ref);    // 輸出：stream
-    fclose($file_ref);		    //關閉文件
+$time = 11;
+
+if ($time < 10 && $time > 5) { 
+  echo 'Good morning'; 
+} elseif ($time > 20 && $time < 24) { 
+  echo 'Good Night';
+} else { 
+  echo 'Good Evening';
 }
+
 ?>
