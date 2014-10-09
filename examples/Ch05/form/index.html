@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Form</title>
+</head>
+
+<body>
+    <form action="index.php" method="post">
+        <div>
+            <input type="text" name="id">帳號</div>
+        <div>
+            <input type="password" name="pwd">密碼</div>
+        <div>
+            <input type="hidden" name="token" value="mytoken">
+        </div>
+        <textarea name="comment" cols="30" rows="10">
+        </textarea>
+        <div>
+            <input type="submit">
+        </div>
+        <!--type屬性決定input的輸入內容，一般單行文字text，password為密碼，輸入顯示黑色圈圈。name屬性為所傳送欄位的值的名稱，後端接收程式以此名稱接收-->
+        <!--hidden 可以在 form 中記錄一些參數值，並隨著其他的輸入值傳送給伺服器端的程式。這些資料並不會顯示在瀏覽器上，使用者是看不到的（除非檢視原始碼）-->
+    </form>
+    <form action="index.php" method="get">
+        <input type="radio" name="hero" value="1">曹操
+        <input type="radio" name="hero" value="2">劉備
+        <input type="radio" name="hero" value="3">孫權
+        <input type="submit">
+    </form>
+    <form action="index.php" method="post">
+        <input type="checkbox" name="man[]" value="a">張飛
+        <input type="checkbox" name="man[]" value="b">趙雲
+        <input type="checkbox" name="man[]" value="c">關羽
+        <input type="submit">
+    </form>
+    <form action="index.php" method="get">
+        <select name="hero" id="hero">
+            <option value="yang">楊過</option>
+            <option value="kuo" selected="selected">郭靖</option>
+            <option value="lin">令狐冲</option>
+            <option value="di">狄雲</option>
+        </select>
+        <input type="submit">
+    </form>
+    <form action="index.php" method="post">
+        <select name="man[]" id="hero" multiple="multiple" size="4">
+            <option value="yang">楊過</option>
+            <option value="kuo" selected="selected">郭靖</option>
+            <option value="lin">令狐冲</option>
+            <option value="di">狄雲</option>
+        </select>
+        <input type="submit">
+    </form>
+    <form action="index.php" enctype="multipart/form-data" method="post">
+        <div>
+            <input type="file" name="img">
+        </div>
+        <input type="submit" />
+    </form>
+    <form action="index.php">
+        <input type="text">
+        <input type="submit" value="送出">
+        <input type="reset" value="重置">
+        <input type="button" value="按鈕">
+        <button>
+            <img src="http://kdchang.cc/mobile-web-dev/img/html5-logo.png" alt="">方便改外觀的按鈕</button>
+    </form>
+
+</body>
+
+</html>
