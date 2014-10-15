@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+		<label for="file">單檔案上傳</label>
+		<input type="file" name="file">
+		<input type="submit">
+	</form>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+		<hr>
+		<label for="file">多檔案上傳</label>
+		<input type="file" name="file[]">
+		<input type="file" name="file[]">
+		<input type="file" name="file[]">
+		<input type="submit">
+	</form>
+</body>
+</html>
