@@ -1,8 +1,10 @@
 <?php
-$a = 10;
-echo empty($a);
-echo isset($a);
-unset($a);
-echo is_null($a);
-
+function discount($price) {
+	if ($price > 500) {
+		return $price * 0.9;
+	} else {
+		return $price;
+	}
+}
+echo discount(1000);
 ?>
