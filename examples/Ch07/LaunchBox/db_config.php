@@ -12,8 +12,8 @@
 ),
  */
 $DB_HOST = 'localhost';
-$DB_USER = 'ibelieveican';
-$DB_PASSWORD = 'bb09284786';
+$DB_USER = 'root';
+$DB_PASSWORD = '';
 $DB_NAME = 'launch_box';
 $DB_DRIVER = 'mysql';
 

@@ -12,3 +12,9 @@
 a:hover {
 	text-decoration: none;
 }
+
+.thumbnails {
+	display: block;
+	width: 150px;
+	height: 5%;
+}
